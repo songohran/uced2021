@@ -22,19 +22,19 @@ media = soma/N;
  desvio = (soma/N);
  printf("Desvio: %.2f\n",desvio);
     
-      for(i=0; i<N; i++){
-      scanf("%float",&notas[i]);
-           }
     max = notas[0];
     min = notas[0];       
-    for(i=0; i<N; i++){
-       if (notas[i] < min){
-           min=notas[i];
-       }
-     }
-      if (notas[i] > max){
+    for(i=0; i<N; i++)
+    {
+      if (notas[i] < min)
+      {
+          min=notas[i];
+      }
+      if (notas[i] > max)
+      {
           max=notas[i];
-       }
+      }
+    }
 printf("Min: %.2f\n Max: %.2f\n \n", min, max); 
         
  return 0;   
